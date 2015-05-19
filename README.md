@@ -6,7 +6,7 @@ Simple GitHub OAuth Controller for iOS
 
 # Installation
 
-## Cocoapods
+## [CocoaPods](https://cocoapods.org/)
 
 ``` ruby
 platform :ios, '7.0'
