@@ -24,6 +24,7 @@ NSString *gh_title = @"Loading";
 
 @property (nonatomic, copy) void (^success)(NSString *, NSDictionary *);
 @property (nonatomic, copy) void (^failure)(NSError *);
+@property (nonatomic, copy) void (^disableDesktop)();
 @end
 
 @implementation GitHubOAuthController
@@ -69,11 +70,12 @@ NSString *gh_title = @"Loading";
     return self;
 }
 
-- (instancetype)initWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret scope:(NSString *)scope success:(void (^)(NSString *, NSDictionary *))success failure:(void (^)(NSError *))failure {
+- (instancetype)initWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret scope:(NSString *)scope success:(void (^)(NSString *, NSDictionary *))success failure:(void (^)(NSError *))failure disableDesktop:(void (^)())disableDesktop {
     self.clientId = clientId;
     self.clientSecret = clientSecret;
     self.success = success;
     self.failure = failure;
+    self.disableDesktop = disableDesktop;
     
     self = [self init];
     
@@ -126,6 +128,16 @@ NSString *gh_title = @"Loading";
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    if ([request.URL.absoluteString isEqualToString:@"https://github.com/site/mobile_preference"]) {
+        if (self.disableDesktop) {
+            self.disableDesktop();
+         
+            NSLog(@"GitHubOAuthController disabled the desktop version, you can change this by setting disableDesktop to nil.");
+            return NO;
+        }
+    }
+    
     // Exchange code for access token
     NSString *match = @"?code=";
     NSRange range = [request.URL.absoluteString rangeOfString:match];

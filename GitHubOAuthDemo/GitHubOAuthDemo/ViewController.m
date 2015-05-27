@@ -28,8 +28,12 @@ static NSString *const kScope = @"user notifications repo";
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yay" message:[NSString stringWithFormat:@"Access token is %@", accessToken]  delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
         [alert show];
-    } failure:nil];
-    
+    } failure:nil
+                                              
+        // disableDesktop:nil];
+        disableDesktop:^{
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Desktop version disabled" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+        [alertView show]; }];
     [oAuthController showModalFromController:self];
 }
 
