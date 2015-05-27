@@ -17,9 +17,10 @@
  @param scope OAuth scope, see https://developer.github.com/v3/oauth/#scopes for more information.
  @param success Block to execute in successful authentication with access token and raw response parameters.
  @param failure Block to execute in authentication failure with error parameter.
+ @param disableDesktop Block to execute when user taps the Desktop Version link. If set to nil, the user can tap on Desktop Version.
  @return Instance of GitHub OAuth controller.
  */
-- (instancetype)initWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret scope:(NSString *)scope success:(void (^)(NSString *accessToken, NSDictionary *raw))success failure:(void (^)(NSError *error))failure;
+- (instancetype)initWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret scope:(NSString *)scope success:(void (^)(NSString *accessToken, NSDictionary *raw))success failure:(void (^)(NSError *error))failure disableDesktop:(void (^)())disableDesktop;
 
 /**
  Show GitHub OAuth controller modally.
