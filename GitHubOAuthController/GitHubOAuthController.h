@@ -39,12 +39,12 @@ static NSString * const gh_safariViewService = @"com.apple.SafariViewService";
 
 /**
  Authentication url.
- @return Authentication url
+ @return Authentication url.
  */
 - (NSURL *)authUrl;
 
 /**
- Configure GitHub OAuth for Safari view controller
+ Configure GitHub OAuth for Safari view controller.
  @param clientId GitHub app client id.
  @param clientSecret GitHub app client secret.
  @param redirectUri GitHub app redirect uri, has to match the url scheme.
