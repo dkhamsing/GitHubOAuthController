@@ -8,15 +8,33 @@
 
 #import "AppDelegate.h"
 
+// Constants
+#import "SafariDemoController.h"
+#import "TraditionalDemoController.h"
+
+// Controllers
+#import "DemoController.h"
+#import "GitHubOAuthController.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[GitHubOAuthController sharedInstance] configureForSafariViewControllerWithClientId:kClientId clientSecret:kClientSecret redirectUri:kRedirectUri scope:kScope];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = ({
+        DemoController *controller = [[DemoController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+        navigationController;
+    });
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -40,6 +58,27 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    NSString *source = options[UIApplicationOpenURLOptionsSourceApplicationKey];
+    if ([source isEqualToString:gh_safariViewService]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:kCloseSafariViewController object:nil];
+        
+        [[GitHubOAuthController sharedInstance] exchangeCodeForAccessTokenInUrl:url success:^(NSString *accessToken, NSDictionary *raw) {
+            NSString *message = [NSString stringWithFormat:@"oauth with safari view controller: retrieved access token: %@ \nraw: %@", accessToken, raw];
+            NSLog(@"%@", message);            
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"☺" message:message preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alertController addAction:action];
+            [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+
+        } failure:nil];
+        
+        return YES;
+    };
+    
+    return NO;
 }
 
 @end
