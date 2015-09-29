@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4405251BBAE566000DC77A /* TraditionalDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4405241BBAE566000DC77A /* TraditionalDemoController.m */; };
+		CE4405281BBAEA56000DC77A /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4405271BBAEA56000DC77A /* DemoController.m */; };
 		CE8D05241AF2CC4600D7514D /* GithubOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D05231AF2CC4600D7514D /* GithubOAuthController.m */; };
 		CEFF9ADA1AF2874A0012DFB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9AD91AF2874A0012DFB2 /* main.m */; };
 		CEFF9ADD1AF2874A0012DFB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9ADC1AF2874A0012DFB2 /* AppDelegate.m */; };
-		CEFF9AE01AF2874A0012DFB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9ADF1AF2874A0012DFB2 /* ViewController.m */; };
-		CEFF9AE31AF2874A0012DFB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFF9AE11AF2874A0012DFB2 /* Main.storyboard */; };
+		CEFF9AE01AF2874A0012DFB2 /* SafariDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9ADF1AF2874A0012DFB2 /* SafariDemoController.m */; };
 		CEFF9AE51AF2874A0012DFB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFF9AE41AF2874A0012DFB2 /* Images.xcassets */; };
 		CEFF9AE81AF2874A0012DFB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFF9AE61AF2874A0012DFB2 /* LaunchScreen.xib */; };
 		CEFF9AF41AF2874A0012DFB2 /* GitHubOAuthDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9AF31AF2874A0012DFB2 /* GitHubOAuthDemoTests.m */; };
@@ -28,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE4405231BBAE566000DC77A /* TraditionalDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TraditionalDemoController.h; sourceTree = "<group>"; };
+		CE4405241BBAE566000DC77A /* TraditionalDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraditionalDemoController.m; sourceTree = "<group>"; };
+		CE4405261BBAEA56000DC77A /* DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoController.h; sourceTree = "<group>"; };
+		CE4405271BBAEA56000DC77A /* DemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoController.m; sourceTree = "<group>"; };
 		CE8D05221AF2CC4600D7514D /* GitHubOAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubOAuthController.h; sourceTree = "<group>"; };
 		CE8D05231AF2CC4600D7514D /* GithubOAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubOAuthController.m; sourceTree = "<group>"; };
 		CEFF9AD41AF2874A0012DFB2 /* GitHubOAuthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubOAuthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,9 +40,8 @@
 		CEFF9AD91AF2874A0012DFB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEFF9ADB1AF2874A0012DFB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEFF9ADC1AF2874A0012DFB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEFF9ADE1AF2874A0012DFB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEFF9ADF1AF2874A0012DFB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CEFF9AE21AF2874A0012DFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEFF9ADE1AF2874A0012DFB2 /* SafariDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariDemoController.h; sourceTree = "<group>"; };
+		CEFF9ADF1AF2874A0012DFB2 /* SafariDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariDemoController.m; sourceTree = "<group>"; };
 		CEFF9AE41AF2874A0012DFB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEFF9AE71AF2874A0012DFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CEFF9AED1AF2874A0012DFB2 /* GitHubOAuthDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubOAuthDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,12 +101,15 @@
 			children = (
 				CEFF9ADB1AF2874A0012DFB2 /* AppDelegate.h */,
 				CEFF9ADC1AF2874A0012DFB2 /* AppDelegate.m */,
-				CEFF9ADE1AF2874A0012DFB2 /* ViewController.h */,
-				CEFF9ADF1AF2874A0012DFB2 /* ViewController.m */,
-				CEFF9AE11AF2874A0012DFB2 /* Main.storyboard */,
+				CE4405261BBAEA56000DC77A /* DemoController.h */,
+				CE4405271BBAEA56000DC77A /* DemoController.m */,
 				CEFF9AE41AF2874A0012DFB2 /* Images.xcassets */,
 				CEFF9AE61AF2874A0012DFB2 /* LaunchScreen.xib */,
+				CE4405231BBAE566000DC77A /* TraditionalDemoController.h */,
+				CE4405241BBAE566000DC77A /* TraditionalDemoController.m */,
 				CEFF9AD71AF2874A0012DFB2 /* Supporting Files */,
+				CEFF9ADE1AF2874A0012DFB2 /* SafariDemoController.h */,
+				CEFF9ADF1AF2874A0012DFB2 /* SafariDemoController.m */,
 			);
 			path = GitHubOAuthDemo;
 			sourceTree = "<group>";
@@ -213,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFF9AE31AF2874A0012DFB2 /* Main.storyboard in Resources */,
 				CEFF9AE81AF2874A0012DFB2 /* LaunchScreen.xib in Resources */,
 				CEFF9AE51AF2874A0012DFB2 /* Images.xcassets in Resources */,
 			);
@@ -233,10 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFF9AE01AF2874A0012DFB2 /* ViewController.m in Sources */,
+				CE4405281BBAEA56000DC77A /* DemoController.m in Sources */,
+				CEFF9AE01AF2874A0012DFB2 /* SafariDemoController.m in Sources */,
 				CEFF9ADD1AF2874A0012DFB2 /* AppDelegate.m in Sources */,
 				CE8D05241AF2CC4600D7514D /* GithubOAuthController.m in Sources */,
 				CEFF9ADA1AF2874A0012DFB2 /* main.m in Sources */,
+				CE4405251BBAE566000DC77A /* TraditionalDemoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,14 +267,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEFF9AE11AF2874A0012DFB2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEFF9AE21AF2874A0012DFB2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEFF9AE61AF2874A0012DFB2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitHubOAuthDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -373,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitHubOAuthDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
