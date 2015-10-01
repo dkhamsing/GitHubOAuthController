@@ -1,3 +1,7 @@
+# 0.2.1
+
+- Add changelog
+
 # 0.2
 
 - Support Safari View Controller (iOS 9)
