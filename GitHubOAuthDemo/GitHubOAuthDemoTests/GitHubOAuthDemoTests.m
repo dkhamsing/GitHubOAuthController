@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import "GitHubOAuthController.h"
+
 @interface GitHubOAuthDemoTests : XCTestCase
+
+@property (nonatomic, strong) GitHubOAuthController *authController;
 
 @end
 
@@ -17,24 +21,23 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    self.authController = [[GitHubOAuthController alloc] initWithClientId:@"" clientSecret:@"" scope:@"" success:nil failure:nil];
+    
+    [[GitHubOAuthController sharedInstance] configureForSafariViewControllerWithClientId:@"client" clientSecret:@"secret" redirectUri:@"redirect" scope:@"scope"];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+//- (void)tearDown {
+//    // Put teardown code here. This method is called after the invocation of each test method in the class.
+//    [super tearDown];
+//}
+
+- (void)testAuthUrl {
+    XCTAssertTrue([[GitHubOAuthController sharedInstance].authUrl.absoluteString isEqualToString:@"https://github.com/login/oauth/authorize?redirect_uri=redirect&client_id=client&scope=scope"]);
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testInit {
+    XCTAssertTrue([self.authController isKindOfClass:[UIViewController class]]);
 }
 
 @end
