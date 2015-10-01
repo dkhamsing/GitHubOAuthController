@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GitHubOAuthController"
-  s.version      = "0.2"
+  s.version      = "0.2.1"
   s.summary      = "Simple GitHub OAuth Controller"
 
   s.homepage     = "https://github.com/dkhamsing/GitHubOAuthController"
