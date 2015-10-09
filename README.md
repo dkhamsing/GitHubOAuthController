@@ -2,6 +2,12 @@
 
 Simple GitHub OAuth Controller for iOS
 
+[![Build Status](https://travis-ci.org/dkhamsing/GitHubOAuthController.svg?branch=master)](https://travis-ci.org/dkhamsing/GitHubOAuthController)
+[![Version](https://img.shields.io/cocoapods/v/GitHubOAuthController.svg?style=flat)](https://cocoapods.org/pods/GitHubOAuthController)
+[![License](https://img.shields.io/cocoapods/l/GitHubOAuthController.svg?style=flat)](http://cocoadocs.org/docsets/GitHubOAuthController)
+[![Platform](https://img.shields.io/cocoapods/p/GitHubOAuthController.svg?style=flat)](http://cocoadocs.org/docsets/GitHubOAuthController)
+
+
 ![](Assets/demo.gif)
 
 # Installation
