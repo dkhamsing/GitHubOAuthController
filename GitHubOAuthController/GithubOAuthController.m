@@ -64,6 +64,7 @@ NSString *gh_application_json = @"application/json";
     self.spinnerView.alpha = 0;
     [indicatorView startAnimating];
     [self.webView loadRequest: [NSURLRequest requestWithURL:self.authUrl]];
+    self.view.tintColor = self.presentingViewController.view.tintColor;
     
     // Layout
     indicatorView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin |UIViewAutoresizingFlexibleLeftMargin;
