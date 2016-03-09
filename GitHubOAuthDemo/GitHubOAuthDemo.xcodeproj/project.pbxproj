@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		964CA8F71C8FEF9A00BF17E8 /* 1Password.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964CA8F41C8FEF9A00BF17E8 /* 1Password.xcassets */; };
+		964CA8F81C8FEF9A00BF17E8 /* OnePasswordExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 964CA8F61C8FEF9A00BF17E8 /* OnePasswordExtension.m */; };
 		CE4405251BBAE566000DC77A /* TraditionalDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4405241BBAE566000DC77A /* TraditionalDemoController.m */; };
 		CE4405281BBAEA56000DC77A /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4405271BBAEA56000DC77A /* DemoController.m */; };
 		CE8D05241AF2CC4600D7514D /* GithubOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D05231AF2CC4600D7514D /* GithubOAuthController.m */; };
-		CECC14E31BBDE92D001C5846 /* GithubOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D05231AF2CC4600D7514D /* GithubOAuthController.m */; settings = {ASSET_TAGS = (); }; };
+		CECC14E31BBDE92D001C5846 /* GithubOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D05231AF2CC4600D7514D /* GithubOAuthController.m */; };
 		CEFF9ADA1AF2874A0012DFB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9AD91AF2874A0012DFB2 /* main.m */; };
 		CEFF9ADD1AF2874A0012DFB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9ADC1AF2874A0012DFB2 /* AppDelegate.m */; };
 		CEFF9AE01AF2874A0012DFB2 /* SafariDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9ADF1AF2874A0012DFB2 /* SafariDemoController.m */; };
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		964CA8F41C8FEF9A00BF17E8 /* 1Password.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = 1Password.xcassets; sourceTree = "<group>"; };
+		964CA8F51C8FEF9A00BF17E8 /* OnePasswordExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnePasswordExtension.h; sourceTree = "<group>"; };
+		964CA8F61C8FEF9A00BF17E8 /* OnePasswordExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnePasswordExtension.m; sourceTree = "<group>"; };
 		CE4405231BBAE566000DC77A /* TraditionalDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TraditionalDemoController.h; sourceTree = "<group>"; };
 		CE4405241BBAE566000DC77A /* TraditionalDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraditionalDemoController.m; sourceTree = "<group>"; };
 		CE4405261BBAEA56000DC77A /* DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoController.h; sourceTree = "<group>"; };
@@ -100,6 +105,9 @@
 		CEFF9AD61AF2874A0012DFB2 /* GitHubOAuthDemo */ = {
 			isa = PBXGroup;
 			children = (
+				964CA8F41C8FEF9A00BF17E8 /* 1Password.xcassets */,
+				964CA8F51C8FEF9A00BF17E8 /* OnePasswordExtension.h */,
+				964CA8F61C8FEF9A00BF17E8 /* OnePasswordExtension.m */,
 				CEFF9ADB1AF2874A0012DFB2 /* AppDelegate.h */,
 				CEFF9ADC1AF2874A0012DFB2 /* AppDelegate.m */,
 				CE4405261BBAEA56000DC77A /* DemoController.h */,
@@ -223,6 +231,7 @@
 			files = (
 				CEFF9AE81AF2874A0012DFB2 /* LaunchScreen.xib in Resources */,
 				CEFF9AE51AF2874A0012DFB2 /* Images.xcassets in Resources */,
+				964CA8F71C8FEF9A00BF17E8 /* 1Password.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964CA8F81C8FEF9A00BF17E8 /* OnePasswordExtension.m in Sources */,
 				CE4405281BBAEA56000DC77A /* DemoController.m in Sources */,
 				CEFF9AE01AF2874A0012DFB2 /* SafariDemoController.m in Sources */,
 				CEFF9ADD1AF2874A0012DFB2 /* AppDelegate.m in Sources */,
@@ -365,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitHubOAuthDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -376,7 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitHubOAuthDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

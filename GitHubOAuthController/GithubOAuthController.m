@@ -6,6 +6,7 @@
 //
 
 #import "GitHubOAuthController.h"
+#import "OnePasswordExtension.h"
 
 NSString *gh_url_authorize = @"https://github.com/login/oauth/authorize";
 NSString *gh_url_token = @"https://github.com/login/oauth/access_token";
@@ -20,6 +21,7 @@ NSString *gh_application_json = @"application/json";
 @property (nonatomic, strong) UIView *spinnerView;
 
 @property (nonatomic, strong) UIBarButtonItem *closeButton;
+@property (nonatomic, strong) UIBarButtonItem *onePasswordButton;
 @property (nonatomic) BOOL modal;
 
 @property (nonatomic, strong) NSString *clientSecret;
@@ -29,6 +31,7 @@ NSString *gh_application_json = @"application/json";
 
 @property (nonatomic, copy) void (^success)(NSString *, NSDictionary *);
 @property (nonatomic, copy) void (^failure)(NSError *);
+
 @end
 
 @implementation GitHubOAuthController
@@ -41,7 +44,11 @@ NSString *gh_application_json = @"application/json";
     self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     self.spinnerView = [[UIView alloc] init];
     UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    
+
+    if ([[OnePasswordExtension sharedExtension] isAppExtensionAvailable]) {
+        self.onePasswordButton = [[UIBarButtonItem alloc] initWithTitle:@"1Password" style:UIBarButtonItemStylePlain target:self action:@selector(fillUsing1Password:)];
+    }
+
     // Subviews
     [self.view addSubview:self.webView];
     [self.view addSubview:self.spinnerView];
@@ -66,7 +73,7 @@ NSString *gh_application_json = @"application/json";
     NSDictionary *metrics = nil;
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[spin]|" options:0 metrics:metrics views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[spin]|" options:0 metrics:metrics views:views]];
-    
+
     return self;
 }
 
@@ -77,6 +84,10 @@ NSString *gh_application_json = @"application/json";
     [controller presentViewController:navigationController animated:YES completion:nil];
     
     self.navigationItem.rightBarButtonItem = self.closeButton;
+
+    if (self.onePasswordButton) {
+        self.navigationItem.leftBarButtonItem = self.onePasswordButton;
+    }
 }
 
 #pragma mark Safari view controller
@@ -216,6 +227,16 @@ NSString *gh_application_json = @"application/json";
     }
     
     return YES;
+}
+
+#pragma mark - 1Password
+
+- (void)fillUsing1Password:(id)sender {
+    [[OnePasswordExtension sharedExtension] fillItemIntoWebView:self.webView forViewController:self sender:sender showOnlyLogins:NO completion:^(BOOL success, NSError *error) {
+        if (!success) {
+            NSLog(@"Failed to fill into webview: <%@>", error);
+        }
+    }];
 }
 
 @end
