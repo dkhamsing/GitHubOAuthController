@@ -46,7 +46,7 @@ NSString *gh_application_json = @"application/json";
     UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
 
     if ([[OnePasswordExtension sharedExtension] isAppExtensionAvailable]) {
-        self.onePasswordButton = [[UIBarButtonItem alloc] initWithTitle:@"1Password" style:UIBarButtonItemStylePlain target:self action:@selector(fillUsing1Password:)];
+        self.onePasswordButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"onepassword-navbar"] style:UIBarButtonItemStylePlain target:self action:@selector(fillUsing1Password:)];
     }
 
     // Subviews
