@@ -1,5 +1,11 @@
 # GitHubOAuthController Changelog
 
+Changes by [Daniel Khamsing](https://github.com/dkhamsing) unless otherwise noted.
+
+## 0.3.0
+
+- Add 1Password support by [Jason Wray](https://github.com/friedbunny)
+
 ## 0.2.2
 
 - Tests

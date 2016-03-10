@@ -33,14 +33,14 @@ Add the files in the GitHubOAuthController folder to your project.
 GitHubOAuthController *oAuthController = [[GitHubOAuthController alloc] initWithClientId:kClientId clientSecret:kClientSecret scope:kScope success:^(NSString *accessToken, NSDictionary *raw) {
   NSLog(@"access token: %@ \nraw: %@", accessToken, raw);
 } failure:nil];
-    
+
 [oAuthController showModalFromController:self];
 ```
 
 ### OAuth with Safari View Controller
 
 - Set url scheme in `.plist`
-  
+
 ![plist](Assets/plist.png)
 
 ```
@@ -65,14 +65,14 @@ GitHubOAuthController *oAuthController = [[GitHubOAuthController alloc] initWith
     NSString *source = options[UIApplicationOpenURLOptionsSourceApplicationKey];
     if ([source isEqualToString:gh_safariViewService]) {
         [[NSNotificationCenter defaultCenter] postNotificationName:kCloseSafariViewController object:nil];
-        
+
         [[GitHubOAuthController sharedInstance] requestAccessTokenWithUrl:url success:^(NSString *accessToken, NSDictionary *raw) {
             NSLog(@"oauth with safari view controller: retrieved access token: %@ \nraw: %@", accessToken, raw);
         } failure:nil];
-        
+
         return YES;
     };
-    
+
     return NO;
 }
 ```
@@ -83,7 +83,8 @@ GitHubOAuthController includes a demo project.
 
 # Thanks
 
-This project was inspired by Caleb Davenport's [SimpleAuth](https://github.com/calebd/SimpleAuth).
+- This project was inspired by Caleb Davenport's [SimpleAuth](https://github.com/calebd/SimpleAuth).
+- [Jason Wray](https://github.com/friedbunny) for [1Password](https://agilebits.com/onepassword) integration
 
 # Contact
 
