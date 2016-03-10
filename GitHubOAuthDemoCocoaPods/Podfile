@@ -1,0 +1,3 @@
+target 'GitHubOAuthCocoaPodsDemo' do
+  pod 'GitHubOAuthController', :path => '../'
+end

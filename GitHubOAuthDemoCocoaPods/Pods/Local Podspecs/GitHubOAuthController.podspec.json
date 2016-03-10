@@ -1,0 +1,28 @@
+{
+  "name": "GitHubOAuthController",
+  "version": "0.3.0",
+  "summary": "Simple GitHub OAuth Controller with 1Password support",
+  "homepage": "https://github.com/dkhamsing/GitHubOAuthController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dkhamsing": "dkhamsing8@gmail.com"
+  },
+  "social_media_url": "http://twitter.com/dkhamsing",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/dkhamsing/GitHubOAuthController.git",
+    "tag": "0.3.0"
+  },
+  "source_files": "GitHubOAuthController/*",
+  "requires_arc": true,
+  "dependencies": {
+    "1PasswordExtension": [
+      "~> 1.8"
+    ]
+  }
+}

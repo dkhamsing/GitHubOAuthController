@@ -1,0 +1,17 @@
+PODS:
+  - 1PasswordExtension (1.8)
+  - GitHubOAuthController (0.3.0):
+    - 1PasswordExtension (~> 1.8)
+
+DEPENDENCIES:
+  - GitHubOAuthController (from `../`)
+
+EXTERNAL SOURCES:
+  GitHubOAuthController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  1PasswordExtension: 627d5aecf210c7636968faf5a4c3546c9531385b
+  GitHubOAuthController: 98b4e78869e7e092aca7c8cb947e7599ba69509d
+
+COCOAPODS: 0.39.0

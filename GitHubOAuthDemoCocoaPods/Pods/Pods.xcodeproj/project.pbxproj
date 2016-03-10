@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006E422C818B2D8820371EFEB2697854 /* onepassword-extension-light@2x~regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 770DF2C6956F87B12345C15CBAD9F483 /* onepassword-extension-light@2x~regular.png */; };
+		033FEFE461BF2C073C5770B62A4171A5 /* onepassword-extension-light@3x~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = 118A2E74EF2CB6F2EB8CC86E13CC5F8A /* onepassword-extension-light@3x~compact.png */; };
+		040EC6158F8BBB763B8535FEC5DFF488 /* onepassword-extension@2x~regular.png in Resources */ = {isa = PBXBuildFile; fileRef = D47A5E9DF368C141C9C590B81DD09F09 /* onepassword-extension@2x~regular.png */; };
+		053225028231C9DDEDFD37667A0F86D1 /* GitHubOAuthController.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C64F85DE89427D86E6BCE95DB88E5C /* GitHubOAuthController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0864D351EA0019504A45C503DE0F8C23 /* onepassword-navbar-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6459070C43813AADECC842FD8FE1F3 /* onepassword-navbar-light@2x.png */; };
+		08EC7B0115D5F9D935C1202AA8F2E314 /* onepassword-button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B3EA6376031876E2F157FF06C67D8D1 /* onepassword-button@3x.png */; };
+		0A0FC4873F00BBD84D40DF9C31F60BB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E0055B69CA8EFCDF22E1069BA4EFAA /* UIKit.framework */; };
+		0D14ECD5CDE3FCC98F163BF062B10C54 /* onepassword-navbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5006CB1081971A9712BFBA6A0D0088F4 /* onepassword-navbar@3x.png */; };
+		111C0213259776333ED27F9CA573C4B2 /* OnePasswordExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB1983B23449113B02B250785600B47 /* OnePasswordExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18D5DCAD593F759E519A50AE6E66D588 /* onepassword-toolbar-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC1E964E2A46D7D80A4B429321A3777 /* onepassword-toolbar-light@2x.png */; };
+		1980E9B04B753D3C883B6B830C71E145 /* onepassword-button-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E052DD348DE3AC9633DB64EFDD4C98 /* onepassword-button-light@3x.png */; };
+		1F43517BA1AA9826527946647D482DF3 /* OnePasswordExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D12E805519A5ABC5846F1B4158B774 /* OnePasswordExtension.m */; };
+		235A19950833A14E544A393343021335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4C1660EFE0E922A1309152251F1813 /* Foundation.framework */; };
+		26FE6531BA3B95F459976266CBA80721 /* onepassword-toolbar-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 22ED08B65DDF1BF44EF59CA2B74ED6A7 /* onepassword-toolbar-light.png */; };
+		2A8C75344008CA57ECD2B488B70D169A /* onepassword-extension-light~regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 70DBB59409A14D7822C4B8904BF49665 /* onepassword-extension-light~regular.png */; };
+		31BBBBB096205B2E1CAEA64D0EA2E49F /* onepassword-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 078E3DBF4C0035D5D00B3755A19217D5 /* onepassword-button.png */; };
+		36906E58F5369348220ABA5CD40CCEF2 /* onepassword-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DABDAEB8C3C7E8E2DC797056E9CECC8 /* onepassword-button@2x.png */; };
+		384B532AB1A986616FCE13AC365FB1D1 /* GithubOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5127C35C0D2244A093CEAB53AD55EB /* GithubOAuthController.m */; };
+		422770D88CB06547B8738059473C579D /* onepassword-extension~regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 9235E6393D8558E62BE5F0A27906FEC6 /* onepassword-extension~regular.png */; };
+		47E31F8FFE88C905C63CE4E47FD6ADBB /* Pods-GitHubOAuthCocoaPodsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E08FE2A4370761DF18977A4F8D777EE5 /* Pods-GitHubOAuthCocoaPodsDemo-dummy.m */; };
+		4857B7D8D6FE8993BAB5EABEDBE8215E /* onepassword-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A7534BF7B7B4FFB0863046CAFD4CB8 /* onepassword-toolbar@2x.png */; };
+		501FF1031481E767811FE1B14C1DFFA3 /* onepassword-navbar-light.png in Resources */ = {isa = PBXBuildFile; fileRef = C2772421A19744992316FD63D527E236 /* onepassword-navbar-light.png */; };
+		59155FC1581E32D72087F711E2176F16 /* 1Password.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0C1E25C007261D9A0D35637E8D6ACA /* 1Password.xcassets */; };
+		5BD7D8C55CF1B935E26FD5CC11827589 /* onepassword-navbar-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D763741D501D70BE32A47022E99CEF55 /* onepassword-navbar-light@3x.png */; };
+		5E4ABD7A48273C770EBDD41391D64257 /* onepassword-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D75BDC0A1B6C92F69791ABC7C2F2F8A4 /* onepassword-toolbar@3x.png */; };
+		60669ED0B7ADDF7D1FF5B20BD635F7CC /* onepassword-toolbar-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC281D4FBA5029692DD02A35786CFE1 /* onepassword-toolbar-light@3x.png */; };
+		62ACA940B7DF496DBE9930545E523423 /* onepassword-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = EE112AB130E13AE27909BB435A48B9C6 /* onepassword-toolbar.png */; };
+		6603EE10B3B9BE8B1E3BF01D5CA88F01 /* onepassword-button-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C5AD8E87E772D9E59A6EDBF8012DF8 /* onepassword-button-light@2x.png */; };
+		6E0183072711CFA5B751D2390F0B0ABF /* GitHubOAuthController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 481368A7210CFB06E007849146D4BA82 /* GitHubOAuthController-dummy.m */; };
+		7458B6F1B48A4312A7B091A7EC99A916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4C1660EFE0E922A1309152251F1813 /* Foundation.framework */; };
+		848AA2BEDCBF377988888C763DD8ED5A /* 1PasswordExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 633DA87AE0786EDD832A3135C65A0322 /* 1PasswordExtension-dummy.m */; };
+		910005F78805F18DCB99711D5FD2207E /* onepassword-navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1187727913614E5084AD2D0C1DE34492 /* onepassword-navbar.png */; };
+		A8857AE78C3E487C9A80E7CF736FFEFF /* onepassword-extension-light@2x~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = 44ADEF57FBFC71B17EB3167FC8BF6B08 /* onepassword-extension-light@2x~compact.png */; };
+		AB6380C1CD74A733209AA69C84DBDD4E /* onepassword-extension~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B9AD0E9FE2B2D8ECE42FE6080F1FEFA /* onepassword-extension~compact.png */; };
+		CF6822657C7BA778824B691C2B5FF5EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4C1660EFE0E922A1309152251F1813 /* Foundation.framework */; };
+		D79B32D649826CAEFFBFA0EDB3B8F0E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412E47461020142667D8D81570C54710 /* MobileCoreServices.framework */; };
+		D94C3951925A6CABB255621065BAFFCA /* onepassword-navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F36211D9F84FB2475F7D15A5B8AFFD /* onepassword-navbar@2x.png */; };
+		DE65A88AF6EF8C851132FF8385A11351 /* onepassword-extension@2x~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DB776C01D5205C8BD4649018A21F9 /* onepassword-extension@2x~compact.png */; };
+		E73C6765DAA8EEFEE6C4B90AB0DAFF51 /* onepassword-button-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 558654DE11CB16797B9C303D61876B78 /* onepassword-button-light.png */; };
+		E8CE4D36B99EF6CC3779209BEAA2FF67 /* onepassword-extension-light~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5EED3A38D82CD233053133C963BAB2 /* onepassword-extension-light~compact.png */; };
+		F07CA64DB98BD2CE54B824FAEFB266C4 /* onepassword-extension@3x~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995E3E0C7FCE8828CE56B320F6E17C3 /* onepassword-extension@3x~compact.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DA60B31525FE2B438FEFBC38DBCBF82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF5F0B86E739958FC1970B0359179864;
+			remoteInfo = 1PasswordExtension;
+		};
+		3AFCA88EEC921667FCFB5E70704CBEDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA3DD0F3C5242B6B19E22CECED8C41D9;
+			remoteInfo = "1PasswordExtension-OnePasswordExtensionResources";
+		};
+		71C1ABA32C29B3A2BF8D197C6C4CFB7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF5F0B86E739958FC1970B0359179864;
+			remoteInfo = 1PasswordExtension;
+		};
+		A55EE632597D8A8308A5D2576AF861E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F89F56D1BECCFF318267F65C39BA698;
+			remoteInfo = GitHubOAuthController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0489B532AC25B1139575A232A7CB75B6 /* Pods-GitHubOAuthCocoaPodsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GitHubOAuthCocoaPodsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		05C8D95418D84C5A1E72E94A58F6759A /* GitHubOAuthController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GitHubOAuthController-prefix.pch"; sourceTree = "<group>"; };
+		078E3DBF4C0035D5D00B3755A19217D5 /* onepassword-button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button.png"; path = "1Password.xcassets/onepassword-button.imageset/onepassword-button.png"; sourceTree = "<group>"; };
+		09C5AD8E87E772D9E59A6EDBF8012DF8 /* onepassword-button-light@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button-light@2x.png"; path = "1Password.xcassets/onepassword-button-light.imageset/onepassword-button-light@2x.png"; sourceTree = "<group>"; };
+		0C0C1E25C007261D9A0D35637E8D6ACA /* 1Password.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = 1Password.xcassets; sourceTree = "<group>"; };
+		0DABDAEB8C3C7E8E2DC797056E9CECC8 /* onepassword-button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button@2x.png"; path = "1Password.xcassets/onepassword-button.imageset/onepassword-button@2x.png"; sourceTree = "<group>"; };
+		1187727913614E5084AD2D0C1DE34492 /* onepassword-navbar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar.png"; path = "1Password.xcassets/onepassword-navbar.imageset/onepassword-navbar.png"; sourceTree = "<group>"; };
+		118A2E74EF2CB6F2EB8CC86E13CC5F8A /* onepassword-extension-light@3x~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light@3x~compact.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light@3x~compact.png"; sourceTree = "<group>"; };
+		1474DFA204585EAE8D410E3B67556158 /* Pods-GitHubOAuthCocoaPodsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubOAuthCocoaPodsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		22ED08B65DDF1BF44EF59CA2B74ED6A7 /* onepassword-toolbar-light.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar-light.png"; path = "1Password.xcassets/onepassword-toolbar-light.imageset/onepassword-toolbar-light.png"; sourceTree = "<group>"; };
+		2652FF697258CC3B0785B4CCF479308E /* lib1PasswordExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib1PasswordExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AB221EB4BF89FBF268A0FD49486462 /* GitHubOAuthController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GitHubOAuthController.xcconfig; sourceTree = "<group>"; };
+		298202CFC2300D838FB2FA3EA18A63C2 /* Pods-GitHubOAuthCocoaPodsDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubOAuthCocoaPodsDemo-resources.sh"; sourceTree = "<group>"; };
+		2B36BB41521E9F30E1A0FAD4BF32B82B /* libPods-GitHubOAuthCocoaPodsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitHubOAuthCocoaPodsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		412E47461020142667D8D81570C54710 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		44ADEF57FBFC71B17EB3167FC8BF6B08 /* onepassword-extension-light@2x~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light@2x~compact.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light@2x~compact.png"; sourceTree = "<group>"; };
+		481368A7210CFB06E007849146D4BA82 /* GitHubOAuthController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GitHubOAuthController-dummy.m"; sourceTree = "<group>"; };
+		4B9AD0E9FE2B2D8ECE42FE6080F1FEFA /* onepassword-extension~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension~compact.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension~compact.png"; sourceTree = "<group>"; };
+		5006CB1081971A9712BFBA6A0D0088F4 /* onepassword-navbar@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar@3x.png"; path = "1Password.xcassets/onepassword-navbar.imageset/onepassword-navbar@3x.png"; sourceTree = "<group>"; };
+		558654DE11CB16797B9C303D61876B78 /* onepassword-button-light.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button-light.png"; path = "1Password.xcassets/onepassword-button-light.imageset/onepassword-button-light.png"; sourceTree = "<group>"; };
+		633DA87AE0786EDD832A3135C65A0322 /* 1PasswordExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "1PasswordExtension-dummy.m"; sourceTree = "<group>"; };
+		63E052DD348DE3AC9633DB64EFDD4C98 /* onepassword-button-light@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button-light@3x.png"; path = "1Password.xcassets/onepassword-button-light.imageset/onepassword-button-light@3x.png"; sourceTree = "<group>"; };
+		64C2FD375EC772E4AA1D6FAF939A1328 /* OnePasswordExtensionResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePasswordExtensionResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6995E3E0C7FCE8828CE56B320F6E17C3 /* onepassword-extension@3x~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension@3x~compact.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension@3x~compact.png"; sourceTree = "<group>"; };
+		6C617327D49501C301114F3B7FC1B523 /* 1PasswordExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "1PasswordExtension-prefix.pch"; sourceTree = "<group>"; };
+		6EB1983B23449113B02B250785600B47 /* OnePasswordExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OnePasswordExtension.h; sourceTree = "<group>"; };
+		6F4C1660EFE0E922A1309152251F1813 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		70DBB59409A14D7822C4B8904BF49665 /* onepassword-extension-light~regular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light~regular.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light~regular.png"; sourceTree = "<group>"; };
+		770DF2C6956F87B12345C15CBAD9F483 /* onepassword-extension-light@2x~regular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light@2x~regular.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light@2x~regular.png"; sourceTree = "<group>"; };
+		7A6459070C43813AADECC842FD8FE1F3 /* onepassword-navbar-light@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar-light@2x.png"; path = "1Password.xcassets/onepassword-navbar-light.imageset/onepassword-navbar-light@2x.png"; sourceTree = "<group>"; };
+		80026FB5F7DAB334DA97742B1EAAC6A6 /* libGitHubOAuthController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGitHubOAuthController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D30CFAF8833FD4F60E2AF91F6337CA4 /* 1PasswordExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = 1PasswordExtension.xcconfig; sourceTree = "<group>"; };
+		8D3DB776C01D5205C8BD4649018A21F9 /* onepassword-extension@2x~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension@2x~compact.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension@2x~compact.png"; sourceTree = "<group>"; };
+		9235E6393D8558E62BE5F0A27906FEC6 /* onepassword-extension~regular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension~regular.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension~regular.png"; sourceTree = "<group>"; };
+		9B3EA6376031876E2F157FF06C67D8D1 /* onepassword-button@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button@3x.png"; path = "1Password.xcassets/onepassword-button.imageset/onepassword-button@3x.png"; sourceTree = "<group>"; };
+		9BC281D4FBA5029692DD02A35786CFE1 /* onepassword-toolbar-light@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar-light@3x.png"; path = "1Password.xcassets/onepassword-toolbar-light.imageset/onepassword-toolbar-light@3x.png"; sourceTree = "<group>"; };
+		A7F9BE07EE2387E01DE3DC7888B6CC67 /* Pods-GitHubOAuthCocoaPodsDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GitHubOAuthCocoaPodsDemo-frameworks.sh"; sourceTree = "<group>"; };
+		AA5EED3A38D82CD233053133C963BAB2 /* onepassword-extension-light~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light~compact.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light~compact.png"; sourceTree = "<group>"; };
+		B1D12E805519A5ABC5846F1B4158B774 /* OnePasswordExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OnePasswordExtension.m; sourceTree = "<group>"; };
+		B7037A7D1CE37BBBC2994936A2EED8D1 /* Pods-GitHubOAuthCocoaPodsDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GitHubOAuthCocoaPodsDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BBC1E964E2A46D7D80A4B429321A3777 /* onepassword-toolbar-light@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar-light@2x.png"; path = "1Password.xcassets/onepassword-toolbar-light.imageset/onepassword-toolbar-light@2x.png"; sourceTree = "<group>"; };
+		C0F36211D9F84FB2475F7D15A5B8AFFD /* onepassword-navbar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar@2x.png"; path = "1Password.xcassets/onepassword-navbar.imageset/onepassword-navbar@2x.png"; sourceTree = "<group>"; };
+		C1A7534BF7B7B4FFB0863046CAFD4CB8 /* onepassword-toolbar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar@2x.png"; path = "1Password.xcassets/onepassword-toolbar.imageset/onepassword-toolbar@2x.png"; sourceTree = "<group>"; };
+		C2772421A19744992316FD63D527E236 /* onepassword-navbar-light.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar-light.png"; path = "1Password.xcassets/onepassword-navbar-light.imageset/onepassword-navbar-light.png"; sourceTree = "<group>"; };
+		C3E0055B69CA8EFCDF22E1069BA4EFAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D03CF193C453CC557E7784AFA7A72315 /* Pods-GitHubOAuthCocoaPodsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GitHubOAuthCocoaPodsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D47A5E9DF368C141C9C590B81DD09F09 /* onepassword-extension@2x~regular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension@2x~regular.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension@2x~regular.png"; sourceTree = "<group>"; };
+		D75BDC0A1B6C92F69791ABC7C2F2F8A4 /* onepassword-toolbar@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar@3x.png"; path = "1Password.xcassets/onepassword-toolbar.imageset/onepassword-toolbar@3x.png"; sourceTree = "<group>"; };
+		D763741D501D70BE32A47022E99CEF55 /* onepassword-navbar-light@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar-light@3x.png"; path = "1Password.xcassets/onepassword-navbar-light.imageset/onepassword-navbar-light@3x.png"; sourceTree = "<group>"; };
+		E08FE2A4370761DF18977A4F8D777EE5 /* Pods-GitHubOAuthCocoaPodsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GitHubOAuthCocoaPodsDemo-dummy.m"; sourceTree = "<group>"; };
+		EE112AB130E13AE27909BB435A48B9C6 /* onepassword-toolbar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar.png"; path = "1Password.xcassets/onepassword-toolbar.imageset/onepassword-toolbar.png"; sourceTree = "<group>"; };
+		EF5127C35C0D2244A093CEAB53AD55EB /* GithubOAuthController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GithubOAuthController.m; sourceTree = "<group>"; };
+		F3C64F85DE89427D86E6BCE95DB88E5C /* GitHubOAuthController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GitHubOAuthController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43FCA69B0668F2C2BE0F48B58B584FB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235A19950833A14E544A393343021335 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5A996F65F49AF6813F9AF254649F40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7458B6F1B48A4312A7B091A7EC99A916 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4052D665196761C99245716BA20D0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B736164329C66FED20E0E9A4F1E7C8E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6822657C7BA778824B691C2B5FF5EE /* Foundation.framework in Frameworks */,
+				D79B32D649826CAEFFBFA0EDB3B8F0E1 /* MobileCoreServices.framework in Frameworks */,
+				0A0FC4873F00BBD84D40DF9C31F60BB8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7422AC4F77BF0433F4FC1F7F4B343036 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2278BED1A518A3630C6756B149C0787F /* 1PasswordExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6EB1983B23449113B02B250785600B47 /* OnePasswordExtension.h */,
+				B1D12E805519A5ABC5846F1B4158B774 /* OnePasswordExtension.m */,
+				A60696DB965D97D353F2280D5D30A089 /* Resources */,
+				6845FE7E1DF8640DFC22875790CA62E3 /* Support Files */,
+			);
+			path = 1PasswordExtension;
+			sourceTree = "<group>";
+		};
+		32B35560CE2F8C0EA1577693A8119B73 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				26AB221EB4BF89FBF268A0FD49486462 /* GitHubOAuthController.xcconfig */,
+				481368A7210CFB06E007849146D4BA82 /* GitHubOAuthController-dummy.m */,
+				05C8D95418D84C5A1E72E94A58F6759A /* GitHubOAuthController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "GitHubOAuthDemoCocoaPods/Pods/Target Support Files/GitHubOAuthController";
+			sourceTree = "<group>";
+		};
+		446397741EDB6B00FEACE73471CC3497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2278BED1A518A3630C6756B149C0787F /* 1PasswordExtension */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6845FE7E1DF8640DFC22875790CA62E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D30CFAF8833FD4F60E2AF91F6337CA4 /* 1PasswordExtension.xcconfig */,
+				633DA87AE0786EDD832A3135C65A0322 /* 1PasswordExtension-dummy.m */,
+				6C617327D49501C301114F3B7FC1B523 /* 1PasswordExtension-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/1PasswordExtension";
+			sourceTree = "<group>";
+		};
+		68C32CBB485725DF8B1D038C9C67044E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EFBE1A84A0EABED9334EBA9D098ADF8 /* GitHubOAuthController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7422AC4F77BF0433F4FC1F7F4B343036 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6F4C1660EFE0E922A1309152251F1813 /* Foundation.framework */,
+				412E47461020142667D8D81570C54710 /* MobileCoreServices.framework */,
+				C3E0055B69CA8EFCDF22E1069BA4EFAA /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				68C32CBB485725DF8B1D038C9C67044E /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				446397741EDB6B00FEACE73471CC3497 /* Pods */,
+				C26C28E744B6EC1BE48F6341076E9CA2 /* Products */,
+				8693E4E62D1767E9379C1C91717E07CD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80A9C0DC9310DEE1692025F578AF3286 /* GitHubOAuthController */ = {
+			isa = PBXGroup;
+			children = (
+				F3C64F85DE89427D86E6BCE95DB88E5C /* GitHubOAuthController.h */,
+				EF5127C35C0D2244A093CEAB53AD55EB /* GithubOAuthController.m */,
+			);
+			path = GitHubOAuthController;
+			sourceTree = "<group>";
+		};
+		8693E4E62D1767E9379C1C91717E07CD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7A5A36F52373DD0C3A1CEC5E259C87F /* Pods-GitHubOAuthCocoaPodsDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8EFBE1A84A0EABED9334EBA9D098ADF8 /* GitHubOAuthController */ = {
+			isa = PBXGroup;
+			children = (
+				80A9C0DC9310DEE1692025F578AF3286 /* GitHubOAuthController */,
+				32B35560CE2F8C0EA1577693A8119B73 /* Support Files */,
+			);
+			name = GitHubOAuthController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A60696DB965D97D353F2280D5D30A089 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C0C1E25C007261D9A0D35637E8D6ACA /* 1Password.xcassets */,
+				078E3DBF4C0035D5D00B3755A19217D5 /* onepassword-button.png */,
+				558654DE11CB16797B9C303D61876B78 /* onepassword-button-light.png */,
+				09C5AD8E87E772D9E59A6EDBF8012DF8 /* onepassword-button-light@2x.png */,
+				63E052DD348DE3AC9633DB64EFDD4C98 /* onepassword-button-light@3x.png */,
+				0DABDAEB8C3C7E8E2DC797056E9CECC8 /* onepassword-button@2x.png */,
+				9B3EA6376031876E2F157FF06C67D8D1 /* onepassword-button@3x.png */,
+				44ADEF57FBFC71B17EB3167FC8BF6B08 /* onepassword-extension-light@2x~compact.png */,
+				770DF2C6956F87B12345C15CBAD9F483 /* onepassword-extension-light@2x~regular.png */,
+				118A2E74EF2CB6F2EB8CC86E13CC5F8A /* onepassword-extension-light@3x~compact.png */,
+				AA5EED3A38D82CD233053133C963BAB2 /* onepassword-extension-light~compact.png */,
+				70DBB59409A14D7822C4B8904BF49665 /* onepassword-extension-light~regular.png */,
+				8D3DB776C01D5205C8BD4649018A21F9 /* onepassword-extension@2x~compact.png */,
+				D47A5E9DF368C141C9C590B81DD09F09 /* onepassword-extension@2x~regular.png */,
+				6995E3E0C7FCE8828CE56B320F6E17C3 /* onepassword-extension@3x~compact.png */,
+				4B9AD0E9FE2B2D8ECE42FE6080F1FEFA /* onepassword-extension~compact.png */,
+				9235E6393D8558E62BE5F0A27906FEC6 /* onepassword-extension~regular.png */,
+				1187727913614E5084AD2D0C1DE34492 /* onepassword-navbar.png */,
+				C2772421A19744992316FD63D527E236 /* onepassword-navbar-light.png */,
+				7A6459070C43813AADECC842FD8FE1F3 /* onepassword-navbar-light@2x.png */,
+				D763741D501D70BE32A47022E99CEF55 /* onepassword-navbar-light@3x.png */,
+				C0F36211D9F84FB2475F7D15A5B8AFFD /* onepassword-navbar@2x.png */,
+				5006CB1081971A9712BFBA6A0D0088F4 /* onepassword-navbar@3x.png */,
+				EE112AB130E13AE27909BB435A48B9C6 /* onepassword-toolbar.png */,
+				22ED08B65DDF1BF44EF59CA2B74ED6A7 /* onepassword-toolbar-light.png */,
+				BBC1E964E2A46D7D80A4B429321A3777 /* onepassword-toolbar-light@2x.png */,
+				9BC281D4FBA5029692DD02A35786CFE1 /* onepassword-toolbar-light@3x.png */,
+				C1A7534BF7B7B4FFB0863046CAFD4CB8 /* onepassword-toolbar@2x.png */,
+				D75BDC0A1B6C92F69791ABC7C2F2F8A4 /* onepassword-toolbar@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C26C28E744B6EC1BE48F6341076E9CA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2652FF697258CC3B0785B4CCF479308E /* lib1PasswordExtension.a */,
+				80026FB5F7DAB334DA97742B1EAAC6A6 /* libGitHubOAuthController.a */,
+				2B36BB41521E9F30E1A0FAD4BF32B82B /* libPods-GitHubOAuthCocoaPodsDemo.a */,
+				64C2FD375EC772E4AA1D6FAF939A1328 /* OnePasswordExtensionResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7A5A36F52373DD0C3A1CEC5E259C87F /* Pods-GitHubOAuthCocoaPodsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B7037A7D1CE37BBBC2994936A2EED8D1 /* Pods-GitHubOAuthCocoaPodsDemo-acknowledgements.markdown */,
+				0489B532AC25B1139575A232A7CB75B6 /* Pods-GitHubOAuthCocoaPodsDemo-acknowledgements.plist */,
+				E08FE2A4370761DF18977A4F8D777EE5 /* Pods-GitHubOAuthCocoaPodsDemo-dummy.m */,
+				A7F9BE07EE2387E01DE3DC7888B6CC67 /* Pods-GitHubOAuthCocoaPodsDemo-frameworks.sh */,
+				298202CFC2300D838FB2FA3EA18A63C2 /* Pods-GitHubOAuthCocoaPodsDemo-resources.sh */,
+				1474DFA204585EAE8D410E3B67556158 /* Pods-GitHubOAuthCocoaPodsDemo.debug.xcconfig */,
+				D03CF193C453CC557E7784AFA7A72315 /* Pods-GitHubOAuthCocoaPodsDemo.release.xcconfig */,
+			);
+			name = "Pods-GitHubOAuthCocoaPodsDemo";
+			path = "Target Support Files/Pods-GitHubOAuthCocoaPodsDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		258A3C1E88CE17C8F4DAECA3962C776D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111C0213259776333ED27F9CA573C4B2 /* OnePasswordExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33732D3BB221E5687C3295A250DCDCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				053225028231C9DDEDFD37667A0F86D1 /* GitHubOAuthController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F89F56D1BECCFF318267F65C39BA698 /* GitHubOAuthController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADCFE2A76C03EBFBB0FCA2D180BB96A /* Build configuration list for PBXNativeTarget "GitHubOAuthController" */;
+			buildPhases = (
+				7CB012BA0A4D068D983129D72566F253 /* Sources */,
+				7B5A996F65F49AF6813F9AF254649F40 /* Frameworks */,
+				B33732D3BB221E5687C3295A250DCDCC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FFB5A44BFBFE14B0A8BF75A5DC7AF16 /* PBXTargetDependency */,
+			);
+			name = GitHubOAuthController;
+			productName = GitHubOAuthController;
+			productReference = 80026FB5F7DAB334DA97742B1EAAC6A6 /* libGitHubOAuthController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF5F0B86E739958FC1970B0359179864 /* 1PasswordExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB808B63631D58195ABFD9A07A5703A /* Build configuration list for PBXNativeTarget "1PasswordExtension" */;
+			buildPhases = (
+				25DC91EF801E56FAFAE34BD1716FC93A /* Sources */,
+				B736164329C66FED20E0E9A4F1E7C8E2 /* Frameworks */,
+				258A3C1E88CE17C8F4DAECA3962C776D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75BE1BE00E8B6FB7C23D6662B9706C36 /* PBXTargetDependency */,
+			);
+			name = 1PasswordExtension;
+			productName = 1PasswordExtension;
+			productReference = 2652FF697258CC3B0785B4CCF479308E /* lib1PasswordExtension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CA3DD0F3C5242B6B19E22CECED8C41D9 /* 1PasswordExtension-OnePasswordExtensionResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CABAB9E6BC8EB59D31CA28884F7197 /* Build configuration list for PBXNativeTarget "1PasswordExtension-OnePasswordExtensionResources" */;
+			buildPhases = (
+				FC84E49AF5EB77684956C7174E767AD4 /* Sources */,
+				AF4052D665196761C99245716BA20D0A /* Frameworks */,
+				3BA36DE52C2C2CF6C50E48878CC67C17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1PasswordExtension-OnePasswordExtensionResources";
+			productName = "1PasswordExtension-OnePasswordExtensionResources";
+			productReference = 64C2FD375EC772E4AA1D6FAF939A1328 /* OnePasswordExtensionResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DB0D462EACC34041B6A8DA128D9E7682 /* Pods-GitHubOAuthCocoaPodsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 755A50A0665FAE3CD436CCBCC5ADC2FF /* Build configuration list for PBXNativeTarget "Pods-GitHubOAuthCocoaPodsDemo" */;
+			buildPhases = (
+				942BDA89C4E970C7081308ABC90E088B /* Sources */,
+				43FCA69B0668F2C2BE0F48B58B584FB0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65B18A8318B09B3D2C1D67B17155EC5D /* PBXTargetDependency */,
+				AB060CD4FBE4B1AEDAA569BA204D7695 /* PBXTargetDependency */,
+			);
+			name = "Pods-GitHubOAuthCocoaPodsDemo";
+			productName = "Pods-GitHubOAuthCocoaPodsDemo";
+			productReference = 2B36BB41521E9F30E1A0FAD4BF32B82B /* libPods-GitHubOAuthCocoaPodsDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C26C28E744B6EC1BE48F6341076E9CA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF5F0B86E739958FC1970B0359179864 /* 1PasswordExtension */,
+				CA3DD0F3C5242B6B19E22CECED8C41D9 /* 1PasswordExtension-OnePasswordExtensionResources */,
+				9F89F56D1BECCFF318267F65C39BA698 /* GitHubOAuthController */,
+				DB0D462EACC34041B6A8DA128D9E7682 /* Pods-GitHubOAuthCocoaPodsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BA36DE52C2C2CF6C50E48878CC67C17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59155FC1581E32D72087F711E2176F16 /* 1Password.xcassets in Resources */,
+				E73C6765DAA8EEFEE6C4B90AB0DAFF51 /* onepassword-button-light.png in Resources */,
+				6603EE10B3B9BE8B1E3BF01D5CA88F01 /* onepassword-button-light@2x.png in Resources */,
+				1980E9B04B753D3C883B6B830C71E145 /* onepassword-button-light@3x.png in Resources */,
+				31BBBBB096205B2E1CAEA64D0EA2E49F /* onepassword-button.png in Resources */,
+				36906E58F5369348220ABA5CD40CCEF2 /* onepassword-button@2x.png in Resources */,
+				08EC7B0115D5F9D935C1202AA8F2E314 /* onepassword-button@3x.png in Resources */,
+				A8857AE78C3E487C9A80E7CF736FFEFF /* onepassword-extension-light@2x~compact.png in Resources */,
+				006E422C818B2D8820371EFEB2697854 /* onepassword-extension-light@2x~regular.png in Resources */,
+				033FEFE461BF2C073C5770B62A4171A5 /* onepassword-extension-light@3x~compact.png in Resources */,
+				E8CE4D36B99EF6CC3779209BEAA2FF67 /* onepassword-extension-light~compact.png in Resources */,
+				2A8C75344008CA57ECD2B488B70D169A /* onepassword-extension-light~regular.png in Resources */,
+				DE65A88AF6EF8C851132FF8385A11351 /* onepassword-extension@2x~compact.png in Resources */,
+				040EC6158F8BBB763B8535FEC5DFF488 /* onepassword-extension@2x~regular.png in Resources */,
+				F07CA64DB98BD2CE54B824FAEFB266C4 /* onepassword-extension@3x~compact.png in Resources */,
+				AB6380C1CD74A733209AA69C84DBDD4E /* onepassword-extension~compact.png in Resources */,
+				422770D88CB06547B8738059473C579D /* onepassword-extension~regular.png in Resources */,
+				501FF1031481E767811FE1B14C1DFFA3 /* onepassword-navbar-light.png in Resources */,
+				0864D351EA0019504A45C503DE0F8C23 /* onepassword-navbar-light@2x.png in Resources */,
+				5BD7D8C55CF1B935E26FD5CC11827589 /* onepassword-navbar-light@3x.png in Resources */,
+				910005F78805F18DCB99711D5FD2207E /* onepassword-navbar.png in Resources */,
+				D94C3951925A6CABB255621065BAFFCA /* onepassword-navbar@2x.png in Resources */,
+				0D14ECD5CDE3FCC98F163BF062B10C54 /* onepassword-navbar@3x.png in Resources */,
+				26FE6531BA3B95F459976266CBA80721 /* onepassword-toolbar-light.png in Resources */,
+				18D5DCAD593F759E519A50AE6E66D588 /* onepassword-toolbar-light@2x.png in Resources */,
+				60669ED0B7ADDF7D1FF5B20BD635F7CC /* onepassword-toolbar-light@3x.png in Resources */,
+				62ACA940B7DF496DBE9930545E523423 /* onepassword-toolbar.png in Resources */,
+				4857B7D8D6FE8993BAB5EABEDBE8215E /* onepassword-toolbar@2x.png in Resources */,
+				5E4ABD7A48273C770EBDD41391D64257 /* onepassword-toolbar@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25DC91EF801E56FAFAE34BD1716FC93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848AA2BEDCBF377988888C763DD8ED5A /* 1PasswordExtension-dummy.m in Sources */,
+				1F43517BA1AA9826527946647D482DF3 /* OnePasswordExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB012BA0A4D068D983129D72566F253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0183072711CFA5B751D2390F0B0ABF /* GitHubOAuthController-dummy.m in Sources */,
+				384B532AB1A986616FCE13AC365FB1D1 /* GithubOAuthController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942BDA89C4E970C7081308ABC90E088B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E31F8FFE88C905C63CE4E47FD6ADBB /* Pods-GitHubOAuthCocoaPodsDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC84E49AF5EB77684956C7174E767AD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FFB5A44BFBFE14B0A8BF75A5DC7AF16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 1PasswordExtension;
+			target = AF5F0B86E739958FC1970B0359179864 /* 1PasswordExtension */;
+			targetProxy = 0DA60B31525FE2B438FEFBC38DBCBF82 /* PBXContainerItemProxy */;
+		};
+		65B18A8318B09B3D2C1D67B17155EC5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 1PasswordExtension;
+			target = AF5F0B86E739958FC1970B0359179864 /* 1PasswordExtension */;
+			targetProxy = 71C1ABA32C29B3A2BF8D197C6C4CFB7F /* PBXContainerItemProxy */;
+		};
+		75BE1BE00E8B6FB7C23D6662B9706C36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "1PasswordExtension-OnePasswordExtensionResources";
+			target = CA3DD0F3C5242B6B19E22CECED8C41D9 /* 1PasswordExtension-OnePasswordExtensionResources */;
+			targetProxy = 3AFCA88EEC921667FCFB5E70704CBEDA /* PBXContainerItemProxy */;
+		};
+		AB060CD4FBE4B1AEDAA569BA204D7695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GitHubOAuthController;
+			target = 9F89F56D1BECCFF318267F65C39BA698 /* GitHubOAuthController */;
+			targetProxy = A55EE632597D8A8308A5D2576AF861E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2829B3A0A4CBD0C32D6FFA1775E11EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D30CFAF8833FD4F60E2AF91F6337CA4 /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/1PasswordExtension/1PasswordExtension-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		64785CFC2AA6F91ADC003E91538CA163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D30CFAF8833FD4F60E2AF91F6337CA4 /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = OnePasswordExtensionResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7568D54F9E84C0875A6F2BDEA8ECDEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03CF193C453CC557E7784AFA7A72315 /* Pods-GitHubOAuthCocoaPodsDemo.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		77A224D7C5A4F7F608978B5ED7BBCB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D30CFAF8833FD4F60E2AF91F6337CA4 /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/1PasswordExtension/1PasswordExtension-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A08C005B8158CE8AF268FBB805BAC6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AB221EB4BF89FBF268A0FD49486462 /* GitHubOAuthController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GitHubOAuthController/GitHubOAuthController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A2BE4C14F27BC4486457B3A7E9A99CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1474DFA204585EAE8D410E3B67556158 /* Pods-GitHubOAuthCocoaPodsDemo.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BC375D6C652576DAD711F65A2A394F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D30CFAF8833FD4F60E2AF91F6337CA4 /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = OnePasswordExtensionResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BC4CEFF5A41AEB35701B2A33C08759FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AB221EB4BF89FBF268A0FD49486462 /* GitHubOAuthController.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GitHubOAuthController/GitHubOAuthController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44CABAB9E6BC8EB59D31CA28884F7197 /* Build configuration list for PBXNativeTarget "1PasswordExtension-OnePasswordExtensionResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64785CFC2AA6F91ADC003E91538CA163 /* Debug */,
+				BC375D6C652576DAD711F65A2A394F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		755A50A0665FAE3CD436CCBCC5ADC2FF /* Build configuration list for PBXNativeTarget "Pods-GitHubOAuthCocoaPodsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2BE4C14F27BC4486457B3A7E9A99CF1 /* Debug */,
+				7568D54F9E84C0875A6F2BDEA8ECDEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB808B63631D58195ABFD9A07A5703A /* Build configuration list for PBXNativeTarget "1PasswordExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A224D7C5A4F7F608978B5ED7BBCB29 /* Debug */,
+				2829B3A0A4CBD0C32D6FFA1775E11EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DADCFE2A76C03EBFBB0FCA2D180BB96A /* Build configuration list for PBXNativeTarget "GitHubOAuthController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08C005B8158CE8AF268FBB805BAC6CC /* Debug */,
+				BC4CEFF5A41AEB35701B2A33C08759FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
