@@ -4,3 +4,6 @@ xcode_scheme: GitHubOAuthCocoaPodsDemo
 osx_image: xcode7
 xcode_sdk: iphonesimulator9.0
 # podfile: GitHubOAuthDemoCocoaPods/Podfile
+before_script:
+  - cd GitHubOAuthDemoCocoaPods
+  - pod update
