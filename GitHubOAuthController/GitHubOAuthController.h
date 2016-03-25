@@ -60,4 +60,19 @@ static NSString * const gh_safariViewService = @"com.apple.SafariViewService";
  */
 - (void)exchangeCodeForAccessTokenInUrl:(NSURL *)url success:(void (^)(NSString *accessToken, NSDictionary *raw))success failure:(void (^)(NSError *error))failure;
 
+/**
+ App delegate helper to get access token for - application:openURL:options:.
+ @param url Open url.
+ @param options Open url options.
+ @param success Success completion block that takes a results parameter (OAuth token, OAuth token secret, Twitter screen name, etc..)
+ @param failure Failure block.
+ */
+- (void)handleOpenUrl:(NSURL *)url options:(NSDictionary *)options success:(void (^)(NSString *accessToken, NSDictionary *raw))success failure:(void (^)(NSError *error))failure;
+
+/**
+ Present GitHub OAuth login with Safari View Controller.
+ @param controller Controller to present GitHub OAuth login from.
+ */
+- (void)presentOAuthSafariLoginFromController:(UIViewController *)controller;
+
 @end

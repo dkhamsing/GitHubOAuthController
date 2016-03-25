@@ -11,20 +11,7 @@
 // Controllers
 #import "GitHubOAuthController.h"
 
-// Frameworks
-@import SafariServices;
-
-@interface SafariDemoController ()
-
-@property (nonatomic, strong) SFSafariViewController *safariViewController;
-
-@end
-
 @implementation SafariDemoController
-
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
 
 - (instancetype)init {
     self = [super init];
@@ -56,19 +43,8 @@
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ReceiveCloseSafariNotification:) name:kCloseSafariViewController object:nil];
-}
-
 - (void)actionStartSafari {
-    self.safariViewController = [[SFSafariViewController alloc] initWithURL:[GitHubOAuthController sharedInstance].authUrl entersReaderIfAvailable:NO];
-    [self presentViewController:self.safariViewController animated:YES completion:nil];
-}
-
-- (void)ReceiveCloseSafariNotification:(NSNotification *)notification {
-    [self.safariViewController dismissViewControllerAnimated:YES completion:nil];
+    [[GitHubOAuthController sharedInstance] presentOAuthSafariLoginFromController:self];
 }
 
 @end

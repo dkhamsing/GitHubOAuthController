@@ -7,6 +7,10 @@
 
 #import "GitHubOAuthController.h"
 
+
+// Frameworks
+@import SafariServices;
+
 NSString *gh_url_authorize = @"https://github.com/login/oauth/authorize";
 NSString *gh_url_token = @"https://github.com/login/oauth/access_token";
 
@@ -29,6 +33,8 @@ NSString *gh_application_json = @"application/json";
 
 @property (nonatomic, copy) void (^success)(NSString *, NSDictionary *);
 @property (nonatomic, copy) void (^failure)(NSError *);
+
+@property (nonatomic, strong) SFSafariViewController *safariViewController;
 @end
 
 @implementation GitHubOAuthController
@@ -107,7 +113,15 @@ NSString *gh_application_json = @"application/json";
     self.clientId = clientId;
     self.clientSecret = clientSecret;
     self.redirectUri = redirectUri;
-    self.scope = [scope stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+    self.scope = [scope stringByReplacingOccurrencesOfString:@" " withString:@"+"];    
+}
+
+- (SFSafariViewController *)safariViewController {
+    if (!_safariViewController) {
+        NSURL *url = [self authUrl];
+        _safariViewController = [[SFSafariViewController alloc] initWithURL:url entersReaderIfAvailable:NO];
+    }
+    return _safariViewController;
 }
 
 - (void)exchangeCodeForAccessTokenInUrl:(NSURL *)url success:(void (^)(NSString *accessToken, NSDictionary *raw))success failure:(void (^)(NSError *error))failure;
@@ -162,6 +176,27 @@ NSString *gh_application_json = @"application/json";
             }
         }
     }] resume];
+}
+
+#pragma mark Safari View Controller
+
+- (void)handleOpenUrl:(NSURL *)url options:(NSDictionary *)options success:(void (^)(NSString *, NSDictionary *))success failure:(void (^)(NSError *))failure;
+{
+    [self.safariViewController dismissViewControllerAnimated:YES completion:^{        
+        if ([url.absoluteString containsString:self.redirectUri]) {
+            [self exchangeCodeForAccessTokenInUrl:url success:success failure:failure];
+        }
+        else {
+            if (self.failure) {
+                self.failure([NSError errorWithDomain:@"OAuth Error" code:600 userInfo:nil]);
+            }
+        }
+    }];
+}
+
+- (void)presentOAuthSafariLoginFromController:(UIViewController *)controller;
+{
+    [controller presentViewController:self.safariViewController animated:YES completion:nil];
 }
 
 #pragma mark - Private
