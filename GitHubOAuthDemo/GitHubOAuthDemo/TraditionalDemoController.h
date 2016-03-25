@@ -10,7 +10,7 @@
 
 static NSString *const kClientId = @"TODO";
 static NSString *const kClientSecret = @"TODO";
-static NSString *const kRedirectUri = @"GitHubOAuthDemo://token";
+static NSString *const kRedirectUri = @"githuboauthdemo://";
 static NSString *const kScope = @"user notifications repo";
 
 @interface TraditionalDemoController : UIViewController

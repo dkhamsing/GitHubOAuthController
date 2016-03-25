@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-static NSString *kCloseSafariViewController = @"kCloseSafariViewController";
-
 @interface SafariDemoController : UIViewController
 
 @end

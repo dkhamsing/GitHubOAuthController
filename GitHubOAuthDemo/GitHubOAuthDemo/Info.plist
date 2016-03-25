@@ -25,7 +25,7 @@
 			<string>com.dkhamsing.GitHubOAuthDemo</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>GitHubOAuthDemo</string>
+				<string>githuboauthdemo</string>
 			</array>
 		</dict>
 	</array>

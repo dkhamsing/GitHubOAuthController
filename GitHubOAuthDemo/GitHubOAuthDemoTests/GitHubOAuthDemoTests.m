@@ -11,6 +11,11 @@
 
 #import "GitHubOAuthController.h"
 
+static NSString *const kClient    = @"key";
+static NSString *const kSecret    = @"secret";
+static NSString *const kScope     = @"scope";
+static NSString *const kRedirect  = @"scheme://";
+
 @interface GitHubOAuthDemoTests : XCTestCase
 
 @property (nonatomic, strong) GitHubOAuthController *authController;
@@ -24,20 +29,20 @@
     
     self.authController = [[GitHubOAuthController alloc] initWithClientId:@"" clientSecret:@"" scope:@"" success:nil failure:nil];
     
-    [[GitHubOAuthController sharedInstance] configureForSafariViewControllerWithClientId:@"client" clientSecret:@"secret" redirectUri:@"redirect" scope:@"scope"];
+    [[GitHubOAuthController sharedInstance] configureForSafariViewControllerWithClientId:kClient clientSecret:kSecret redirectUri:kRedirect scope:kScope];
 }
 
-//- (void)tearDown {
-//    // Put teardown code here. This method is called after the invocation of each test method in the class.
-//    [super tearDown];
-//}
-
 - (void)testAuthUrl {
-    XCTAssertTrue([[GitHubOAuthController sharedInstance].authUrl.absoluteString isEqualToString:@"https://github.com/login/oauth/authorize?redirect_uri=redirect&client_id=client&scope=scope"]);
+    NSString *expect = [NSString stringWithFormat:@"https://github.com/login/oauth/authorize?redirect_uri=%@&client_id=%@&scope=%@", kRedirect, kClient, kScope];
+    XCTAssertTrue([[GitHubOAuthController sharedInstance].authUrl.absoluteString isEqualToString:expect]);
 }
 
 - (void)testInit {
     XCTAssertTrue([self.authController isKindOfClass:[UIViewController class]]);
+}
+
+- (void)testSharedInstance {
+    XCTAssertTrue([[GitHubOAuthController sharedInstance] isKindOfClass:[GitHubOAuthController class]]);
 }
 
 @end

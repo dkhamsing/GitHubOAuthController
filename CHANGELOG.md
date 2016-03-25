@@ -1,5 +1,9 @@
 # GitHubOAuthController Changelog
 
+## 0.2.3
+
+- Improve Safari View Controller support
+
 ## 0.2.2
 
 - Tests
